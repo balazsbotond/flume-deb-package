@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+chown -R root:root /usr/lib/flume
+useradd flume -m -s /bin/bash
+chown -R flume:flume /var/log/flume
+
