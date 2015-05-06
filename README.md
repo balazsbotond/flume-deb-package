@@ -3,6 +3,9 @@ Apache Flume Debian package
 
 A Debian package for installing Apache Flume 1.5.2. Works on Ubuntu and Debian.
 
+**Download the latest pre-built release here:**
+https://github.com/balazsbotond/flume-deb-package/releases
+
 Building the package
 --------------------
 
@@ -26,14 +29,14 @@ Installing the package
 Using Flume
 -----------
 
-Use the file `/etc/flume/flume-conf.properties` to configure your agent
+Use the file `/etc/flume/flume-conf.properties` to configure your agent. You can use the default settings (Sequence Generator Source and Logger sink) to quickly test a new installation.
 
 Start the service:
 
     service flume start
 
+Use `tail -f /var/log/flume/flume.log` to check if everything works correctly. If something went wrong, `/var/log/syslog` might also contain useful information.
+
 You can stop it with:
 
     service flume stop
-
-If something goes wrong, inspect the log at `/var/log/flume/flume.log`. `/var/log/syslog` might also contain useful information.
