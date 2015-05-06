@@ -21,6 +21,7 @@ Installing the package
 ----------------------
 
     dpkg -i flume_1.5.2-1.deb
+    apt-get install -f
 
 Using Flume
 -----------
