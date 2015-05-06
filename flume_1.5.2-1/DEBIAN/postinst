@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 
+echo postinst: Starting...
+
+# Check if the flume user already exists
+id -u flume > /dev/null
+
+if [ $? == 1 ]; then
+	useradd flume
+fi
+
 chown -R root:root /usr/lib/flume
-useradd flume -m -s /bin/bash
 chown -R flume:flume /var/log/flume
 
+echo postinst: Done.
+
+exit 0
