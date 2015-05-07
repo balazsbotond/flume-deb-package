@@ -13,6 +13,12 @@ chown -R root:root /usr/lib/flume
 chown root:root /etc/init/flume.conf
 chown -R flume:flume /var/log/flume
 
+test -x /sbin/initctl && /sbin/initctl --version | grep -q upstart || false
+
+if [ $? != 0 ]; then
+	update-rc.d flume defaults
+fi
+
 echo postinst: Done.
 
 exit 0
