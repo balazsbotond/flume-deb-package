@@ -16,7 +16,7 @@ Clone the repository:
 Build the package using `dpkg-deb`:
 
     cd flume-deb-package
-    dpkg-deb flume_1.5.2-1
+    dpkg-deb --build flume_1.5.2-1
 
 This will create a `flume_1.5.2-1.deb` file in the current directory.
 
