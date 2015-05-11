@@ -29,13 +29,13 @@ Installing the package
 Using Flume
 -----------
 
-Use the file `/etc/flume/flume-conf.properties` to configure your agent. You can use the default settings (Sequence Generator Source and Logger sink) to quickly test a new installation.
+Use the file `/etc/flume/flume-conf.properties` to configure your agent. You can use the default settings (Sequence Generator Source and Logger Sink) to quickly test a new installation.
 
 Start the service:
 
     service flume start
 
-Use `tail -f /var/log/flume/flume.log` to check if everything works correctly. If something went wrong, `/var/log/syslog` might also contain useful information.
+Use `tail -f /var/log/flume/flume.log` to check if everything works correctly. If something goes wrong, `/var/log/syslog` might also contain useful information.
 
 You can stop it with:
 
