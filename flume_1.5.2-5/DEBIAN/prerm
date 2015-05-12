@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+echo prerm: Starting...
+
+service flume stop
+exit 0
+
+echo prerm: Done.

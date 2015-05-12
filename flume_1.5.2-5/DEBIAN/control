@@ -1,0 +1,10 @@
+Package: flume
+Version: 1.5.2-5
+Section: base
+Priority: optional
+Architecture: all
+Depends: openjdk-7-jre
+Maintainer: Botond Balazs <balazsbotond@gmail.com>
+Description: Flume agent 1.5.2
+ Flume is a distributed, reliable, and available service for efficiently
+ collecting, aggregating, and moving large amounts of log data.
